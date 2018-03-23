@@ -1,12 +1,12 @@
 {
-  "name": "excel-export",
-  "version": "0.5.1",
+  "name": "tsdk-excel-export",
+  "version": "0.5.3",
   "description": "Simple data set export to Excel xlsx file",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/main"
   },
-  "repository": "https://github.com/functionscope/Node-Excel-Export",
+  "repository": "https://github.com/tsdk/Node-Excel-Export",
   "keywords": [
     "Excel",
     "xlsx"

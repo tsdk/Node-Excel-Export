@@ -14,7 +14,7 @@ Setup configs object before passing it into the execute method. If generating mu
 	app.get('/Excel', function(req, res){
 	  	var conf ={};
 		conf.stylesXmlFile = "styles.xml";
-        conf.name = "mysheet";
+        	conf.sheetName = "中文sheet";
 	  	conf.cols = [{
 			caption:'string',
             type:'string',
