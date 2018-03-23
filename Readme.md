@@ -14,14 +14,14 @@ Setup configs object before passing it into the execute method. If generating mu
 	app.get('/Excel', function(req, res){
 	  	var conf ={};
 		conf.stylesXmlFile = "styles.xml";
-        	conf.sheetName = "中文sheet";
+		conf.sheetName = "中文sheet";
 	  	conf.cols = [{
 			caption:'string',
-            type:'string',
-            beforeCellWrite:function(row, cellData){
+            		type:'string',
+            		beforeCellWrite:function(row, cellData){
 				 return cellData.toUpperCase();
 			},
-            width:28.7109375
+            		width:28.7109375
 		},{
 			caption:'date',
 			type:'date',
