@@ -71,7 +71,7 @@ function generateWorkbook(configs,xlsx) {
 	var workbook = sheetsFront;
 	var i = 1;	
 	configs.forEach( function(config) {
-		workbook += '<sheet name="'+ config.name + '" sheetId="' + i +'" r:id="rId' + i + '"/>';
+		workbook += '<sheet name="'+ (config.sheetName || config.name) + '" sheetId="' + i +'" r:id="rId' + i + '"/>';
 		i++;
 	});
 	workbook += sheetsBack;
